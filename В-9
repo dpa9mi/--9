@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main(){
+  setlocale(LC_ALL, ".1251");
+
+  int k, N[9], i;
+  char Z[8];
+
+ a:printf("Введіть k від 1 до 9 ");
+ cin >> k;
+ if (k < 3 || k > 10)
+ {
+  printf("Невірне введення");
+  goto a;
+ }
+
+ for (i = 0; i < k; i++) {
+  cout << "Введіть " << i + 1 << "цифру";
+  cin >> N[i];
+ }
+ for (i = 0; i < k-1; i++) {
+  cout << "Введіть " << i + 1 << "знак";
+  cin >> Z[i];
+ }
+
+   system("pause");
+   return 0;
+ };
